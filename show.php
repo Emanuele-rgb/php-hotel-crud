@@ -16,7 +16,7 @@ include __DIR__ . '/partials/templates/head.php';
             <h1 class="text-primary">Room details <?php echo $room['room_number'] ?></h1>
           </header>
 
-          <div class="card">
+          <div class="card mb-5">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">ID: <?php echo $room['id']?></li>
               <li class="list-group-item">ROOM NUMBER: <?php echo $room['room_number']?></li>
@@ -25,7 +25,7 @@ include __DIR__ . '/partials/templates/head.php';
             </ul>
           </div>
 
-          <a href="./">&lt; Back to archive</a>
+          <a class="btn btn-primary" href="<?php echo $base_path; ?>/edit.php?id=<?php echo $room['id']; ?>">Update</a>
 
         </div>
       </div>
