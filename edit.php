@@ -39,6 +39,10 @@ include __DIR__ . '/partials/templates/head.php';
             </div>
 
           </form>
+
+          <a class="btn btn-primary" href="<?php echo $base_path; ?>show.php?id=<?php echo $room['id']; ?>">Details</a>
+
+
         </div>
       </div>
     </main>
